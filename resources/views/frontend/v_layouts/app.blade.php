@@ -171,7 +171,7 @@
                 </div>
                 <div class="text-white-50 fw-medium d-flex align-items-center">
                     <span class="me-4">
-                        <i class="bi bi-envelope-fill text-danger me-1"></i> cs@sigmaautomobil.com
+                        <i class="bi bi-envelope-fill text-danger me-1"></i> cs@suzis.com
                     </span>
                     <a href="#" class="text-white text-decoration-none fw-bold">
                         <i class="bi bi-whatsapp text-success me-1"></i> +62 812-3456-7890

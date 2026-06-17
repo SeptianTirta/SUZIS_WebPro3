@@ -62,4 +62,19 @@ class TransaksiController extends Controller
             'redirect_url' => $redirectUrl // URL ini yang akan dikirim ke Flutter
         ], 201);
     }
+
+    public function index(Request $request)
+    {
+        // Mengambil transaksi milik user yang sedang login menggunakan token Sanctum
+        $riwayat = Transaksi::with('mobil')
+            ->where('user_id', $request->user()->id)
+            ->latest()
+            ->get();
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Data riwayat transaksi berhasil diambil',
+            'data' => $riwayat
+        ], 200);
+    }
 }

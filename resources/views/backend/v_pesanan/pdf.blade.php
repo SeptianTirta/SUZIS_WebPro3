@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Laporan Pesanan - Sigma Automobil</title>
+    <title>Laporan Pesanan - Suzuki Integaretd System</title>
     <style>
         body {
             font-family: sans-serif;
@@ -56,7 +56,7 @@
 
 <body>
     <h2>LAPORAN PESANAN (BOOKING)</h2>
-    <p class="subtitle">Sistem Informasi Sigma Automobil</p>
+    <p class="subtitle">Sistem Informasi Suzuki Integrated System</p>
 
     <table>
         <thead>

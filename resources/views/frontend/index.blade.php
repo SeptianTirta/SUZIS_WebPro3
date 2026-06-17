@@ -205,7 +205,7 @@
                         Lebih Lanjut</a>
                 </div>
                 <div class="col-md-6 offset-md-1 order-1 order-md-2 mb-4 mb-md-0">
-                    <img src="{{ asset('img/suzuki-banner3.jpg') }}" alt="Promo 2"
+                    <img src="{{ asset('img/suzuki-banner2.jpg') }}" alt="Promo 2"
                         class="img-fluid rounded-5 shadow-sm" style="height: 400px; width: 100%; object-fit: cover;">
                 </div>
             </div>
@@ -217,7 +217,7 @@
             <div class="d-flex justify-content-between align-items-end mb-5">
                 <div>
                     <h2 class="fw-bold m-0" style="color: #001437; font-size: 2.5rem;">Berita & Update</h2>
-                    <p class="text-muted m-0 mt-2">Informasi terbaru seputar otomotif dan SIGMA Automobil</p>
+                    <p class="text-muted m-0 mt-2">Informasi terbaru seputar otomotif dan SUZIS </p>
                 </div>
                 <a href="#" class="text-danger fw-bold text-decoration-none d-none d-md-block">Lihat Semua <i
                         class="bi bi-arrow-right"></i></a>
@@ -250,7 +250,7 @@
                         <a href="#" class="text-decoration-none flex-fill">
                             <div class="position-relative rounded-5 overflow-hidden shadow-sm h-100"
                                 style="min-height: 190px;">
-                                <img src="{{ asset('img/suzuki-banner3.jpg') }}"
+                                <img src="{{ asset('img/suzuki-banner2.jpg') }}"
                                     class="w-100 h-100 object-fit-cover position-absolute" alt="Berita 2"
                                     style="transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'"
                                     onmouseout="this.style.transform='scale(1)'">
@@ -289,7 +289,7 @@
 
     <footer class="py-4 border-top" style="background: #ffffff;">
         <div class="container text-center">
-            <h5 class="fw-bold mb-1" style="color: #001437;">SIGMA AUTOMOBIL</h5>
+            <h5 class="fw-bold mb-1" style="color: #001437;">SUZIS</h5>
             <p class="text-muted small mb-0">&copy; {{ date('Y') }} Dealer Resmi Mobil Suzuki. Hak Cipta Dilindungi.
             </p>
         </div>

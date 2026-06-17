@@ -6,8 +6,7 @@
 
         {{-- AREA LOGO BRAND (BACKGROUND PUTIH AGAR LOGO JELAS) --}}
         <div class="sidebar-brand d-flex align-items-center justify-content-center py-4 mb-2 border-bottom">
-            <img src="{{ asset('img/logo-sigma-automobil.png') }}" alt="Sigma Automobil"
-                style="max-width: 75%; height: auto;">
+            <img src="{{ asset('img/suzis.png') }}" alt="Sigma Automobil" style="max-width: 75%; height: auto;">
         </div>
 
         {{-- MENU NAVIGASI --}}
@@ -67,7 +66,7 @@
     {{-- BUNGKUSAN BAWAH: Trademark --}}
     <div class="px-4 py-3 mt-auto w-100 text-center bg-light border-top">
         <small class="text-muted" style="font-size: 11px; letter-spacing: 0.5px;">
-            &copy; {{ date('Y') }} <strong>Sigma Automobil</strong>.<br>
+            &copy; {{ date('Y') }} <strong>Suzuki Integrated Sales System</strong>.<br>
             <span style="font-size: 10px;">Web Programming 3</span>
         </small>
     </div>

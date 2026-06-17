@@ -85,7 +85,7 @@
                         <img src="https://ui-avatars.com/api/?name={{ urlencode(auth()->user()->nama) }}&background=001437&color=fff"
                             class="avatar-img mb-3">
                         <h5 class="fw-bold mb-0 text-dark">{{ auth()->user()->nama }}</h5>
-                        <small class="text-muted">Member Suzuki Ratan</small>
+                        <small class="text-muted">Member Suzis</small>
                     </div>
 
                     <div class="nav flex-column nav-pills">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masuk | Sigma Automobil</title>
+    <title>Masuk | Suzuki Integrated Sales System</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -104,7 +104,7 @@
                 <h1>Temukan Mobil Impianmu</h1>
                 <p>
                     Sistem penjualan mobil modern untuk pengalaman terbaik.
-                    Jelajahi berbagai pilihan mobil dengan harga terbaik bersama Sigma Automobil.
+                    Jelajahi berbagai pilihan mobil dengan harga terbaik bersama Suzis.
                 </p>
             </div>
         </div>
@@ -119,8 +119,7 @@
                 </div>
 
                 <div class="text-center mb-4">
-                    <img src="{{ asset('img/logo-sigma-automobil.png') }}" alt="Sigma Automobil" height="45"
-                        class="mb-3">
+                    <img src="{{ asset('img/suzis.png') }}" alt="Sigma Automobil" height="45" class="mb-3">
                     <h5 class="fw-bold text-dark mb-1">Selamat Datang Kembali</h5>
                     <small class="text-muted">Silakan login ke akun Anda</small>
                 </div>

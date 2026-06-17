@@ -36,4 +36,5 @@ Route::post('/login', [AuthController::class, 'login']);
 // Rute yang butuh Token Login ditaruh di dalam grup ini
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/booking', [TransaksiController::class, 'store']);
+    Route::get('/pesanan', [TransaksiController::class, 'index']); // Tambahkan baris ini
 });

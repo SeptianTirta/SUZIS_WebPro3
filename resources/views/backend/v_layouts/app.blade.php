@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel | Sigma Automobil</title>
+    <title>Admin Panel | Suzuki Integrated Sales System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -112,7 +112,7 @@
 
         <footer class="text-center py-4 mt-auto"
             style="color: #a0a5b1; font-size: 13px; border-top: 1px solid #e9ecef;">
-            &copy; {{ date('Y') }} Dealer Resmi Sigma Automobil. Hak cipta dilindungi.
+            &copy; {{ date('Y') }} Suzuki Integrated Sales System. Hak cipta dilindungi.
         </footer>
 
     </div>
