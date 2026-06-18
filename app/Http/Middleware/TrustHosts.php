@@ -6,14 +6,11 @@ use Illuminate\Http\Middleware\TrustHosts as Middleware;
 
 class TrustHosts extends Middleware
 {
-    /**
-     * Get the host patterns that should be trusted.
-     *
-     * @return array<int, string|null>
-     */
     public function hosts(): array
     {
         return [
+            '*.ngrok-free.app',
+            '*.ngrok-free.dev',  // tambahkan ini karena URL kamu pakai .dev
             $this->allSubdomainsOfApplicationUrl(),
         ];
     }
