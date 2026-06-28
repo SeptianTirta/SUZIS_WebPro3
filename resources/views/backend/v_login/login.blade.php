@@ -143,8 +143,10 @@
                     <div class="mb-4">
                         <div class="d-flex justify-content-between align-items-center mb-1">
                             <label class="form-label fw-bold small m-0" style="color: #001437;">Kata Sandi</label>
-                            <a href="#" class="small fw-bold text-danger text-decoration-none"
-                                style="font-size: 13px;">Lupa Sandi?</a>
+
+                            <a href="{{ route('password.request') }}"
+                                class="small fw-bold text-danger text-decoration-none" style="font-size: 13px;">Lupa
+                                Sandi?</a>
                         </div>
 
                         <div class="input-group">

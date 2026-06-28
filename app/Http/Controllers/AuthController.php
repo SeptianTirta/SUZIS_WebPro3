@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         return view('backend.v_login.login');
     }
 
@@ -36,7 +37,8 @@ class AuthController extends Controller
         return back()->with('error', 'Email atau Password salah!');
     }
 
-    public function logout(Request $request) {
+    public function logout(Request $request)
+    {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
@@ -47,7 +49,7 @@ class AuthController extends Controller
     // Menampilkan halaman pendaftaran pelanggan
     public function register()
     {
-        return view('frontend.register');
+        return view('backend.v_login.register');
     }
 
     // Memproses data pendaftaran ke tabel users

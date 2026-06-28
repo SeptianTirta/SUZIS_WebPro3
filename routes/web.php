@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\Backend\TipeController;
 use App\Http\Controllers\Backend\MobilController;
 use App\Http\Controllers\FrontendController;
@@ -21,7 +22,7 @@ Route::middleware(['tolak_admin'])->group(function () {
 Route::middleware(['auth', 'role:2'])->group(function () {
     Route::get('/mobil/{id}/booking', [FrontendController::class, 'booking'])->name('booking.mobil');
     Route::post('/booking/store', [FrontendController::class, 'bookingStore'])->name('booking.store');
-    Route::get('/booking/cancel/{kodeBooking}', [FrontendController::class, 'bookingCancel'])->name('booking.cancel'); // TAMBAHAN
+    Route::get('/booking/cancel/{kodeBooking}', [FrontendController::class, 'bookingCancel'])->name('booking.cancel');
     Route::get('/pesanan-saya', [FrontendController::class, 'pesananSaya'])->name('pesanan.saya');
 
     Route::get('/profil', [FrontendController::class, 'profil'])->name('profil.index');
@@ -33,7 +34,7 @@ Route::get('/auth/google/callback', [GoogleAuthController::class, 'callback'])->
 
 /*
 |--------------------------------------------------------------------------
-| AUTHENTICATION ROUTES (Login & Logout)
+| AUTHENTICATION ROUTES (Login, Register & Lupa Sandi)
 |--------------------------------------------------------------------------
 */
 Route::get('/register', [AuthController::class, 'register'])->name('register')->middleware('guest');
@@ -41,6 +42,12 @@ Route::post('/register', [AuthController::class, 'registerStore'])->name('regist
 Route::get('/login', [AuthController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [AuthController::class, 'authenticate'])->name('backend.login');
 Route::get('/logout', [AuthController::class, 'logout'])->name('backend.logout');
+
+// ROUTE LUPA KATA SANDI
+Route::get('/lupa-sandi', [PasswordResetController::class, 'requestForm'])->name('password.request')->middleware('guest');
+Route::post('/lupa-sandi', [PasswordResetController::class, 'sendResetLink'])->name('password.email')->middleware('guest');
+Route::get('/reset-sandi/{token}', [PasswordResetController::class, 'resetForm'])->name('password.reset')->middleware('guest');
+Route::post('/reset-sandi', [PasswordResetController::class, 'updatePassword'])->name('password.update')->middleware('guest');
 
 /*
 |--------------------------------------------------------------------------
